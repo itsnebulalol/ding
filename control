@@ -2,7 +2,7 @@ Package: me.nebula.ding
 Name: Ding
 Version: 1.0.0-beta1
 Architecture: iphoneos-arm
-Description: Take control of your mute switch!
+Description: Take control of your ringer switch!
 Maintainer: Nebula
 Author: Nebula
 Section: Tweaks

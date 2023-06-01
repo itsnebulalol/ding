@@ -5,11 +5,11 @@
 
 <br clear="both"/>
 
-## Compile
+## Building
 
 1. Install latest [theos](https://theos.dev)
 2. Download [iOS 13 toolchain](https://github.com/nahtedetihw/Xcode11Toolchain) and put it in `$THEOS/toolchain` (name it `Xcode.xctoolchain`)
-3. Run `make clean package && make clean package THEOS_PACKAGE_SCHEME=rootless`
+3. Run `make clean && ROOTLESS=1 make do` for rootless, and `make clean && make do` for rootful
 4. Install the deb for your device from `packages`
 
 ## Credits

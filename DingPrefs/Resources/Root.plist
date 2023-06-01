@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>headerCellClass</key>
+			<string>HBPackageNameHeaderCell</string>
+			<key>packageIdentifier</key>
+			<string>me.nebula.ding</string>
+			<key>titleColor</key>
+			<string>#C39BD3</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.nebula.ding.prefs</string>
+			<key>key</key>
+			<string>isEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>label</key>
+			<string>Mode</string>
+			<key>validTitles</key>
+			<array>
+				<string>Unmuted</string>
+				<string>Muted</string>
+				<string>No Forcing</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+				<string>2</string>
+			</array>
+			<key>defaults</key>
+			<string>me.nebula.ding.prefs</string>
+			<key>key</key>
+			<string>mode</string>
+			<key>default</key>
+			<string>Unmuted</string>
+			<key>PostNotification</key>
+			<string>me.nebula.ding.prefs/ReloadPrefs</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Options</string>
+			<key>footerText</key>
+			<string>Haptics will only be enabled if an action is enabled.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.nebula.ding.prefs</string>
+			<key>key</key>
+			<string>alwaysRingtone</string>
+			<key>label</key>
+			<string>Always Unmute Ringtone</string>
+			<key>PostNotification</key>
+			<string>me.nebula.ding.prefs/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>me.nebula.ding.prefs</string>
+			<key>key</key>
+			<string>actionUnmute</string>
+			<key>label</key>
+			<string>Unmute Position for Action</string>
+			<key>PostNotification</key>
+			<string>me.nebula.ding.prefs/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>me.nebula.ding.prefs</string>
+			<key>key</key>
+			<string>hapticFeedback</string>
+			<key>label</key>
+			<string>Haptic Feedback</string>
+			<key>PostNotification</key>
+			<string>me.nebula.ding.prefs/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>label</key>
+			<string>Switch Actions</string>
+			<key>validTitles</key>
+			<array>
+				<string>None</string>
+				<string>Flashlight</string>
+				<string>Orientation Lock</string>
+				<string>Airplane Mode</string>
+				<string>Wi-Fi</string>
+				<string>Bluetooth</string>
+				<string>Cellular Data</string>
+				<string>Low Power Mode</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+				<string>3</string>
+				<string>4</string>
+				<string>5</string>
+				<string>6</string>
+				<string>7</string>
+				<string>8</string>
+			</array>
+			<key>defaults</key>
+			<string>me.nebula.ding.prefs</string>
+			<key>key</key>
+			<string>switchAction</string>
+			<key>default</key>
+			<string>None</string>
+			<key>PostNotification</key>
+			<string>me.nebula.ding.prefs/ReloadPrefs</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Ding by Nebula - Enjoy!</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>big</key>
+			<true/>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>height</key>
+			<integer>56</integer>
+			<key>label</key>
+			<string>Nebula</string>
+			<key>subtitle</key>
+			<string>@itsnebulalol</string>
+			<key>url</key>
+			<string>https://twitter.com/itsnebulalol</string>
+			<key>iconURL</key>
+			<string>https://github.com/itsnebulalol.png</string>
+			<key>iconCircular</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>big</key>
+			<true/>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>height</key>
+			<integer>56</integer>
+			<key>label</key>
+			<string>Flower - Icon Designer</string>
+			<key>subtitle</key>
+			<string>@flowerible</string>
+			<key>url</key>
+			<string>https://twitter.com/flowerible</string>
+			<key>iconURL</key>
+			<string>https://github.com/flowerible.png</string>
+			<key>iconCircular</key>
+			<true/>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Ding</string>
+</dict>
+</plist>

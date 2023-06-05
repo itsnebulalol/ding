@@ -1,0 +1,9 @@
+Package: me.nebula.ding
+Name: Ding
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Take control of your ringer switch!
+Maintainer: Nebula
+Author: Nebula
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, ws.hbang.common (>= 1.17), firmware (>= 13.0)

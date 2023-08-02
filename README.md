@@ -17,5 +17,5 @@
 - [Staturnz](https://github.com/staturnzz) for finding `_updateRingerState` hook for me
 - [Fiore](https://github.com/donato-fiore) for some of GameSeagull prefs
 - [Alexia](https://github.com/0xallie) for help with manually calling `setRingerMuted`
-- Hydrate for figuring out you need Xcode 11 for building rootful on latest Ventura and Sonoma
+- [Hydrate](https://github.com/hydrationMan) for figuring out you need Xcode 11 for building rootful on latest Ventura and Sonoma
 - [iCraze](https://github.com/iCrazeiOS) for general improvements

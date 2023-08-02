@@ -120,6 +120,9 @@
 				<string>Wi-Fi</string>
 				<string>Bluetooth</string>
 				<string>Low Power Mode</string>
+				<string>Do Not Disturb</string>
+				<string>Cellular Data</string>
+				<string>Dark Mode</string>
 			</array>
 			<key>validValues</key>
 			<array>
@@ -130,13 +133,16 @@
 				<string>5</string>
 				<string>6</string>
 				<string>7</string>
+				<string>8</string>
+				<string>9</string>
+				<string>10</string>
 			</array>
 			<key>defaults</key>
 			<string>me.nebula.ding.prefs</string>
 			<key>key</key>
 			<string>switchAction</string>
 			<key>default</key>
-			<string>None</string>
+			<string>0</string>
 			<key>PostNotification</key>
 			<string>me.nebula.ding.prefs/ReloadPrefs</string>
 		</dict>
@@ -175,13 +181,13 @@
 			<key>height</key>
 			<integer>56</integer>
 			<key>label</key>
-			<string>Flower - Icon Designer</string>
+			<string>Samara - Icon Designer</string>
 			<key>subtitle</key>
-			<string>@flowerible</string>
+			<string>@ssalggnikool</string>
 			<key>url</key>
-			<string>https://twitter.com/flowerible</string>
+			<string>https://github.com/ssalggnikool</string>
 			<key>iconURL</key>
-			<string>https://github.com/flowerible.png</string>
+			<string>https://github.com/ssalggnikool.png</string>
 			<key>iconCircular</key>
 			<true/>
 		</dict>

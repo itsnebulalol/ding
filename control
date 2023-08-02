@@ -1,6 +1,6 @@
 Package: me.nebula.ding
 Name: Ding
-Version: 1.0.0
+Version: 1.1.0
 Architecture: iphoneos-arm
 Description: Take control of your ringer switch!
 Maintainer: Nebula

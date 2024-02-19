@@ -30,7 +30,7 @@ jobs:
       - name: Build ding rootful
         run: |
           gmake -j$(sysctl -n hw.ncpu) clean
-          gmake -j$(sysctl -n hw.ncpu) do ROOTLESS=0 SYSROOT=$THEOS/sdks/iPhoneOS16.5.sdk FINALPACKAGE=1
+          gmake -j$(sysctl -n hw.ncpu) do ROOTFUL=1 SYSROOT=$THEOS/sdks/iPhoneOS16.5.sdk
         continue-on-error: true
 
       - name: Move rootful .deb
@@ -39,7 +39,7 @@ jobs:
       - name: Build ding rootless
         run: |
           gmake -j$(sysctl -n hw.ncpu) clean
-          gmake -j$(sysctl -n hw.ncpu) do ROOTLESS=1 SYSROOT=$THEOS/sdks/iPhoneOS16.5.sdk FINALPACKAGE=1
+          gmake -j$(sysctl -n hw.ncpu) do SYSROOT=$THEOS/sdks/iPhoneOS16.5.sdk
         continue-on-error: true
 
       - name: Move rootless .deb

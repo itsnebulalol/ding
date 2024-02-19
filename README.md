@@ -7,6 +7,8 @@ At the time of writing, `itsnebulalol/ding` has a GNU General Public License v3.
 
 If you like Ding, [buy it on Chariz](https://chariz.com/buy/ding).
 
+Should any issues arise with this repository, do ***NOT*** report it to the developer. While the tweak itself is **untouched**, problems may arise from errors in the `.yml`, which should be addressed in this repository. As there are no Issues, you can state your problems with the tweak in a Pull Request.
+
 <hr>
 
 ***Original `README.md`:***

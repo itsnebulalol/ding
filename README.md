@@ -1,3 +1,16 @@
+# dleovl says:
+This is a fork of `itsnebulalol/ding` to incorporate a GitHub Actions workflow `.yml` for building without a Mac. As the license allows for distribution and modification, I feel like this repository can be made.
+
+The source is untouched, only `.github/workflows/build.yml` has been created, and this message made in `README.md`.
+
+At the time of writing, `itsnebulalol/ding` has a GNU General Public License v3.0 license, you can view it [here](https://github.com/itsnebulalol/ding/blob/main/LICENSE). This repository uses the same license.
+
+If you like ding, [buy it on Chariz](https://chariz.com/buy/ding).
+
+<hr>
+
+**Original `README.md`:**
+
 <picture>
 	<source media="(prefers-color-scheme: light)" srcset="https://cdn.discordapp.com/attachments/1028398976640229380/1113461306939412490/DingBannerBlack.png">
 	<img align="left" height="120" src="https://cdn.discordapp.com/attachments/1028398976640229380/1113461307182690364/DingBanner.png" alt="Ding Banner" style="float: left;"/>

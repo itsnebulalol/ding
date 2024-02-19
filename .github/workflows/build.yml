@@ -30,7 +30,7 @@ jobs:
       - name: Build Ding rootful
         run: |
           gmake -j$(sysctl -n hw.ncpu) clean
-          gmake -j$(sysctl -n hw.ncpu) do THEOS_PACKAGE_SCHEME=rootful SYSROOT=$THEOS/sdks/iPhoneOS14.5.sdk
+          gmake -j$(sysctl -n hw.ncpu) do THEOS_PACKAGE_SCHEME=rootful SYSROOT=$THEOS/sdks/iPhoneOS16.5.sdk
         continue-on-error: true
 
       - name: Move rootful .deb

@@ -32,7 +32,7 @@ jobs:
           mv ./* $THEOS/sdks/
 
       - name: Make debs directory
-        run: mkdir ./debs
+        run: mkdir ~/debs
 
       - name: Build Ding rootful
         run: |
@@ -41,7 +41,7 @@ jobs:
         continue-on-error: true
 
       - name: Move rootful .deb
-        run: mv ./packages/*.deb ./debs
+        run: mv ./packages/*.deb ~/debs
       
       - name: Build Ding rootless
         run: |
@@ -50,13 +50,13 @@ jobs:
         continue-on-error: true
 
       - name: Move rootless .deb
-        run: mv ./packages/*.deb ./debs
+        run: mv ./packages/*.deb ~/debs
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
           name: ding
-          path: ./debs/*.deb
+          path: ~/debs/*.deb
 
       - name: Delete old release
         uses: dev-drprasad/delete-tag-and-release@v0.2.1

@@ -1,5 +1,5 @@
 # dleovl says:
-This is a fork of `itsnebulalol/ding` to incorporate a GitHub Actions workflow `.yml` for building without a Mac. As the `LICENSE` allows for distribution and modification, this repository can be made. The changes to the source are noted below, making it more reliable and safer than a piracy repository. The link to purchase the tweak are noted below, please do so to support the developer.
+This is a fork of `itsnebulalol/ding` to incorporate a GitHub Actions workflow `.yml` for building without a Mac. As the `LICENSE` allows for distribution and modification, this repository can be made. The changes to the source are noted below, making it more reliable and safer than a piracy repository. The link to purchase the tweak is noted below, please do so if you want to support the developer.
 
 ## Licensing
 
@@ -18,8 +18,6 @@ If you like Ding, [buy it on Chariz](https://chariz.com/buy/ding).
 Should any issues arise with this repository, do ***NOT*** report it to the developer. While the tweak itself is **untouched**, problems may arise from errors in the `.yml`, which should be addressed in this repository. As there are no Issues, you can state your problems with the tweak in a Pull Request.
 
 <hr>
-
-## Original `README.md`:
 
 <picture>
 	<source media="(prefers-color-scheme: light)" srcset="https://cdn.discordapp.com/attachments/1028398976640229380/1113461306939412490/DingBannerBlack.png">

@@ -1,0 +1,60 @@
+name: Build tweak
+
+on:
+  push:
+    paths:
+      - ".github/workflows/build.yml"
+      - "control"
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build tweak
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install gmake
+        run: brew install make
+
+      - name: Install theos/theos
+        run: bash -c "$(curl -fsSL 'https://raw.githubusercontent.com/theos/theos/master/bin/install-theos')"
+
+      - name: Setup Theos environment
+        run: echo "THEOS=/Users/runner/theos" >> $GITHUB_ENV
+
+      - name: Build ding
+        run: |
+          gmake -j$(sysctl -n hw.ncpu) clean
+          gmake -j$(sysctl -n hw.ncpu) do ROOTLESS=1 SYSROOT=$THEOS/sdks/iPhoneOS16.5.sdk FINALPACKAGE=1
+        continue-on-error: true
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ding.deb
+          path: ./packages/*.deb
+
+      - name: Delete old release
+        uses: dev-drprasad/delete-tag-and-release@v0.2.1
+        with:
+          delete_release: true
+          tag_name: release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Get artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: ding.deb
+
+      - name: Create new rolling release
+        uses: ncipollo/release-action@v1
+        with:
+          name: "ding Release"
+          body: "ding built with GitHub Actions.\n\nRead the `README.md` to determine what changes were made, as per the `LICENSE`."
+          artifacts: "*.deb"
+          tag: release
+          token: ${{ secrets.GITHUB_TOKEN }}

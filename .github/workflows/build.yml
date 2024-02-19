@@ -24,20 +24,13 @@ jobs:
       - name: Setup Theos environment
         run: echo "THEOS=/Users/runner/theos" >> $GITHUB_ENV
 
-      - name: Download patched SDKs
-        run: |
-          git clone https://github.com/theos/sdks
-          cd sdks
-          rm -rf $THEOS/sdks/*
-          mv ./* $THEOS/sdks/
-
       - name: Make debs directory
         run: mkdir ~/debs
 
       - name: Build Ding rootful
         run: |
           gmake -j$(sysctl -n hw.ncpu) clean
-          gmake -j$(sysctl -n hw.ncpu) do THEOS_PACKAGE_SCHEME=rootless SYSROOT=$THEOS/sdks/iPhoneOS14.5.sdk
+          gmake -j$(sysctl -n hw.ncpu) do THEOS_PACKAGE_SCHEME=rootful SYSROOT=$THEOS/sdks/iPhoneOS14.5.sdk
         continue-on-error: true
 
       - name: Move rootful .deb

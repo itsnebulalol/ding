@@ -1,5 +1,5 @@
 # dleovl says:
-This is a fork of `itsnebulalol/ding` to incorporate a GitHub Actions workflow `.yml` for building without a Mac. As the `LICENSE` allows for distribution and modification, this repository can be made.
+This is a fork of `itsnebulalol/ding` to incorporate a GitHub Actions workflow `.yml` for building without a Mac. As the `LICENSE` allows for distribution and modification, this repository can be made. The changes to the source are noted below, making it more reliable and safer than a piracy repository. The link to purchase the tweak are noted below, please do so to support the developer.
 
 The source is untouched, only `.github/workflows/build.yml` has been created for building, and this message created in `README.md`.
 

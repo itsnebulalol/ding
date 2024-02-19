@@ -24,6 +24,13 @@ jobs:
       - name: Setup Theos environment
         run: echo "THEOS=/Users/runner/theos" >> $GITHUB_ENV
 
+      - name: Download patched SDKs
+        run: |
+          git clone https://github.com/theos/sdks
+          cd sdks
+          rm -rf $THEOS/sdks/*
+          mv ./* $THEOS/sdks/
+
       - name: Make separate packages directory
         run: pwd && mkdir ~/debs/
 

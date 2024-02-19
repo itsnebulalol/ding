@@ -5,7 +5,7 @@ The source is untouched, only `.github/workflows/build.yml` has been created, an
 
 At the time of writing, `itsnebulalol/ding` has a GNU General Public License v3.0 license, you can view it [here](https://github.com/itsnebulalol/ding/blob/main/LICENSE). This repository uses the same license.
 
-If you like ding, [buy it on Chariz](https://chariz.com/buy/ding).
+If you like Ding, [buy it on Chariz](https://chariz.com/buy/ding).
 
 <hr>
 

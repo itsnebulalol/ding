@@ -34,7 +34,7 @@ jobs:
       - name: Make separate packages directory
         run: mkdir ./debs
 
-      - name: Build ding rootful
+      - name: Build Ding rootful
         run: |
           gmake -j$(sysctl -n hw.ncpu) do ROOTFUL=1 SYSROOT=$THEOS/sdks/iPhoneOS14.5.sdk
         continue-on-error: true
@@ -42,7 +42,7 @@ jobs:
       - name: Move rootful .deb
         run: mv ./packages/*.deb ./debs
       
-      - name: Build ding rootless
+      - name: Build Ding rootless
         run: |
           gmake -j$(sysctl -n hw.ncpu) clean
           gmake -j$(sysctl -n hw.ncpu) do SYSROOT=$THEOS/sdks/iPhoneOS16.5.sdk

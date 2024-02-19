@@ -3,6 +3,8 @@ This is a fork of `itsnebulalol/ding` to incorporate a GitHub Actions workflow `
 
 Builds for current-day `roothide` will not be available, as the architecture is quickly evolving. Please use the [RootHidePatcher](https://github.com/roothide/RootHidePatcher).
 
+If you want a `rootful` build, [buy Ding from Chariz](https://chariz.com/buy/ding).
+
 ## Licensing
 
 The source is untouched, only `.github/workflows/build.yml` has been created for building, and this message created in `README.md`.

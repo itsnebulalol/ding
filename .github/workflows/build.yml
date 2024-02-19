@@ -36,7 +36,6 @@ jobs:
 
       - name: Build ding rootful
         run: |
-          gmake -j$(sysctl -n hw.ncpu) clean
           gmake -j$(sysctl -n hw.ncpu) do ROOTFUL=1 SYSROOT=$THEOS/sdks/iPhoneOS14.5.sdk
         continue-on-error: true
 

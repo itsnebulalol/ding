@@ -25,16 +25,16 @@ jobs:
         run: echo "THEOS=/Users/runner/theos" >> $GITHUB_ENV
 
       - name: Make separate packages directory
-        run: mkdir ~/debs/
+        run: mkdir ./debs/
 
       - name: Build ding rootful
         run: |
           gmake -j$(sysctl -n hw.ncpu) clean
-          gmake -j$(sysctl -n hw.ncpu) do SYSROOT=$THEOS/sdks/iPhoneOS16.5.sdk FINALPACKAGE=1
+          gmake -j$(sysctl -n hw.ncpu) do ROOTLESS=0 SYSROOT=$THEOS/sdks/iPhoneOS16.5.sdk FINALPACKAGE=1
         continue-on-error: true
 
       - name: Move rootful .deb
-        run: mv ./packages/*.deb ~/debs/
+        run: mv ./packages/*.deb ./debs/
       
       - name: Build ding rootless
         run: |
@@ -43,13 +43,13 @@ jobs:
         continue-on-error: true
 
       - name: Move rootless .deb
-        run: mv ./packages/*.deb ~/debs/
+        run: mv ./packages/*.deb ./debs/
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
           name: ding
-          path: ~/debs/*.deb
+          path: ./debs/*.deb
 
       - name: Delete old release
         uses: dev-drprasad/delete-tag-and-release@v0.2.1

@@ -9,10 +9,6 @@ The source is untouched, only `.github/workflows/build.yml` has been created for
 
 At the time of writing, `itsnebulalol/ding` has a GNU General Public License v3.0 license, you can view it [here](https://github.com/itsnebulalol/ding/blob/main/LICENSE). This repository uses the same license.
 
-The SDKs provided in `theos/sdks` are subject to the [Xcode and Apple SDKs Agreement](https://www.apple.com/legal/sla/docs/xcode.pdf).
-
-At the time of writing, `theos/sdks` utilized in `.github/workflows/build.yml` is licensed under the [MIT License](https://github.com/theos/sdks/blob/master/LICENSE.md).
-
 ## Notes
 
 If you like Ding, [buy it on Chariz](https://chariz.com/buy/ding).

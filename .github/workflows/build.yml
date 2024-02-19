@@ -1,4 +1,4 @@
-name: Build tweak
+name: Build and Release Tweak
 
 on:
   push:
@@ -36,10 +36,10 @@ jobs:
           gmake -j$(sysctl -n hw.ncpu) do ROOTLESS=1 SYSROOT=$THEOS/sdks/iPhoneOS16.5.sdk FINALPACKAGE=1
         continue-on-error: true
 
-      - name: Upload artifact
+      - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: ding.deb
+          name: ding
           path: ./packages/*.deb
 
       - name: Delete old release
@@ -51,16 +51,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
 
-      - name: Get artifact
+      - name: Get artifacts
         uses: actions/download-artifact@v3
         with:
-          name: ding.deb
+          name: ding
+          path: ./artifacts/
 
       - name: Create new rolling release
         uses: ncipollo/release-action@v1
         with:
-          name: "ding Release"
-          body: "ding built with GitHub Actions.\n\nRead the `README.md` to determine what changes were made, as per the `LICENSE`."
-          artifacts: "*.deb"
+          name: "Ding Release"
+          body: "`itsnebulalol/ding` built with GitHub Actions.\n\nRead the `README.md` to determine what changes were made, as per the `LICENSE`."
+          artifacts: "./artifacts/*.deb"
           tag: release
           token: ${{ secrets.GITHUB_TOKEN }}

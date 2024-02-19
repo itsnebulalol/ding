@@ -31,7 +31,7 @@ jobs:
           rm -rf $THEOS/sdks/*
           mv ./* $THEOS/sdks/
 
-      - name: Make separate packages directory
+      - name: Make debs directory
         run: mkdir ./debs
 
       - name: Build Ding rootful

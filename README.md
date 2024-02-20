@@ -13,7 +13,7 @@ At the time of writing, `itsnebulalol/ding` has a GNU General Public License v3.
 
 ## Notes
 
-If you like Ding, [buy it on Chariz](https://chariz.com/buy/ding). Additionally, you can [sponsor the developer](https://github.com/sponsors/itsnebulalol).
+If you like Ding, [buy it on Chariz](https://chariz.com/buy/ding). Additionally, you can [sponsor the developer](https://github.com/sponsors/itsnebulalol), sponsoring the developer can enable the developer to create more quality products.
 
 Should any issues arise with the build automation of this repository, do ***NOT report it to the developer***. While the tweak **source** is untouched, oversights may occur from automated building. As there is no Issues tab, you can state your problems with the automation in a Pull Request.
 

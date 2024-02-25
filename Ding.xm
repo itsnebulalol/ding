@@ -23,11 +23,7 @@ BOOL findActionBool(int position) {
 	// 0 = Muted
 	// 1 = Unmuted
 
-	if (actionMute) {
-		return (position == 0) ? YES : NO;
-	} else {
-		return (position == 0) ? NO : YES;
-	}
+	return (position == 0) == actionMute;
 }
 
 %group CallGroup
